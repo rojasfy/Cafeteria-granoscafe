@@ -1,0 +1,1201 @@
+/*-------------------- Reseteo de página Web ------------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-inicio {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Bienvenido"
+        "Nuestrocafé "
+        "Footer";
+    grid-template-rows: 8rem 35rem 60rem 8rem;}
+
+    @media screen and (max-width: 1526px) {
+
+        .contenedor-inicio {
+            grid-template-rows: 8rem 65.7rem 60rem 8rem;
+        }
+    
+    }
+
+    @media screen and (max-width: 1456px) {
+
+        .contenedor-inicio {
+            grid-template-rows: 8rem 68rem 58rem 8rem;
+        }
+    
+    }
+
+    @media screen and  (max-width: 1405px) {
+   
+        .contenedor-inicio {
+            grid-template-rows: 8rem 68rem 54rem 8rem;
+        }
+    }
+
+    @media screen and  (max-width: 1330px) {
+   
+        .contenedor-inicio {
+            grid-template-rows: 8rem 68rem 49rem 12rem;
+        }
+    }
+/* --------------Estilo del Header de las páginas del proyectos-------------- */
+
+
+
+.header {
+    grid-area: head;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.57);
+    position: fixed;
+    width: 100%;
+}
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo img {
+    padding: 1px 1px;
+    width: 26%;
+    height: 26%;
+    margin: 0px 0px 0px 250px;
+}
+
+.listamenu {
+    padding: 10px 150px 10px 5px;
+}
+
+/* .listamenu-a {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+
+} */
+
+.listamenu-a a {
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.25rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+
+}
+
+
+/* .listamenu-a a:hover{
+    animation: cambiosmenu 4s;
+}
+ */
+/* @keyframes cambiosmenu{
+    0%{ color: rgb(122 60 36);   
+        padding: 20px;
+    }
+
+    25%{ border: 2px solid rgb(122 60 36);
+        border-radius: 10px;
+    }
+
+    50%{font-size: 1.3rem;}
+
+    100% {translateY: 4px;}
+}
+
+ */
+
+
+/* -----------------Estilo del cuerpo de la página de inicio ----------------------*/
+
+/*------------------ Estilo sección 1 de la página de inicio ---------------------*/
+
+.Bienvenido {
+    grid-area: Bienvenido;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    border-bottom: #7a5e3c solid 2px;
+    margin: 1px;
+    padding: 0px 5px;
+}
+
+@media screen and (max-width: 1526px) {
+
+    .Bienvenido {
+        flex-direction: column;
+        align-items: center;
+        margin: 0% auto;
+        padding: 1rem 10rem;
+    }
+
+}
+
+
+
+.Bienvenido-texto {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.Titulo1 {
+    margin: 0px;
+    font-size: 3.2rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+    text-align: center;
+}
+
+.separación {
+    width: 35%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.parrafo-nivel-2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    margin: 1 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+.parrafo-nivel-1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    margin: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+@media screen and  (max-width: 1432px) {
+
+    .parrafo-nivel-1 {
+        font-size: 1.2em;
+        line-height: 1.8rem;}
+}
+
+@media screen and  (max-width: 1330px) {
+
+    .parrafo-nivel-1 {
+        font-size: 1.1em;
+        line-height: 1.7rem;}
+}
+
+@media screen and  (max-width: 1284px) {
+
+    .parrafo-nivel-1 {
+        font-size: 1.1em;
+        line-height: 1.5rem;}
+}
+
+.Bienvenido-video {
+    padding: 1px;
+    margin: 1px;
+}
+
+.Bienvenido-video iframe {
+    width: 50rem;
+    height: 34.7rem;
+    padding: 1px;
+    margin: 1px;
+}
+
+/*------------ Estilo sección 2 de la página de inicio---------------------- */
+
+.Nuestrocafé {
+    grid-area: Nuestrocafé;
+    text-align: right;
+    background-image: url(/Imagenes/Granoscafe-nuestrocafe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px 10px 10px 10px;
+    margin: 9px;
+}
+
+
+.Nuestrocafétexto {
+    text-align: center;
+    padding: 10px 10px 15px 1025px;
+    margin: 10px 0px 10px 10px;
+}
+
+@media screen and  (max-width: 1405px) {
+   
+    .Nuestrocafétexto {
+        padding: 5px 10px 15px 900px;
+        margin: 10px 0px 10px 10px;
+    }
+}
+
+@media screen and  (max-width: 1330px) {
+
+    .Nuestrocafétexto {
+        padding: 20px 10px 5px 850px;
+        margin: 1px 0px 5px 10px;
+    }
+}
+
+@media screen and  (max-width: 1284px) {
+
+    .Nuestrocafétexto {
+        padding: 20px 10px 5px 800px;
+        margin: 1px 0px 5px 10px;
+    }
+
+}
+
+.Titulo2 {
+    margin: 12px;
+    font-size: 2.5rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+    text-align: center;
+}
+
+@media screen and  (max-width: 1330px) {
+
+    .Titulo2 {
+        margin: 10px;
+        font-size: 2.2rem;
+    }
+}
+
+
+
+.parrafo-nivel-2-A {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin: 5px;
+    padding: 10px 10px 10px 0px;
+    text-align: justify;
+}
+
+@media screen and  (max-width: 1405px) {
+
+    .parrafo-nivel-2-A {
+        font-size: 1.35rem;
+        line-height: 1.6rem;
+    }
+
+    
+}
+
+@media screen and  (max-width: 1330px) {
+
+    .parrafo-nivel-2-A {
+        font-size: 1.32rem;
+        line-height: 1.6rem;
+    }
+
+}
+
+@media screen and  (max-width: 1284px) {
+
+    .parrafo-nivel-2-A {
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+}
+.separación-A {
+    width: 55%;
+    margin: 1px;
+    padding: 10px;
+}
+
+@media screen and  (max-width: 1405px) {
+
+
+    .separación-A {
+        width: 55%;
+        margin: 1px;
+        padding: 5px;
+    }
+    
+}
+
+@media screen and  (max-width: 1330px) {
+
+
+    .separación-A {
+        width: 55%;
+        margin: 1px;
+        padding: 1px;
+    }
+}
+
+
+
+.Horario {
+    background-color: #e3dbdbc7;
+    -webkit-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0);
+    border-radius: 1em;
+    padding: 10px 0px 10px 12px;
+    margin: 10px 80px 10px 1125px;
+    text-align: center;
+}
+
+@media screen and  (max-width: 1532px) {
+
+    .Horario  {
+        margin: 1% 4% 1% 75.5%;
+        padding: 1% 1.5% 1% 1.5%;
+    }
+
+}
+
+@media screen and  (max-width: 1456px) {
+
+    .Horario {
+        margin: 10px 3.5% 10px 76%;
+        padding: 10px 1% 10px 1%;
+    }
+
+    .card-text-E{
+        line-height: 30%;
+    }
+    
+
+}
+
+@media screen and  (max-width: 1405px) {
+
+    .Horario  {
+        margin: 1% 3.5% 1% 75%;
+        padding: 10px 1% 10px 1%;
+    }
+
+}
+
+@media screen and  (max-width: 1330px) {
+
+    .Horario  {
+        margin: 1% 3% 1% 74%;
+        padding: 7px 1% 10px 1%;
+    }
+
+    .card-text-E-1{
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .card-text-E{
+        line-height: 30%;
+        font-size: 82%;
+    }
+}
+
+@media screen and  (max-width: 1284px) {
+
+    .Horario  {
+        margin: 1% 4% 1% 72%;
+        padding: 1% 1.5% 1% 1.0%;
+    }
+
+}
+
+
+.posicion-horario {
+    position: revert;
+}
+
+.parrafo-nivel-2-B {
+    margin: 10px;
+    padding: 35px 10px 10px 100px;
+    text-align: center;
+}
+
+.parrafo-nivel-3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+
+.parrafo-nivel-3A {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+.parrafo-nivel-1A {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* --------------Estilo del cuerpo de la página Nosotros-------------- */
+
+.contenedor-nosotros {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Nosotros"
+        "Footer";
+    grid-template-rows: 8rem 60rem 8rem;
+}
+
+.Nosotros {
+    grid-area: Nosotros;
+    background-image: url(/Imagenes/Granoscafe-nosotrossomoscafe.jpg);
+    background-size: 100%;
+    /* box-shadow: rgb(106 47 47) 0px 0px 0px 0.5px; */
+    margin: 0px 0px 0px 0px;
+    padding: 15px 10px 5px 10px;
+}
+
+.Titulo2-nosotros {
+    margin: 20px;
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+    text-align: center;
+}
+
+.parrafo-nivel-2-nosotros {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 19px;
+    line-height: 35px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 20px 10px;
+    text-align: justify;
+}
+
+.parrafo-nivel-1-nosotros {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 10px 40px 10px;
+    font-weight: bold;
+    block-size: 0px;
+}
+
+.nosotros-separación {
+    width: 50%;
+    text-align: center;
+    margin: 5px 10px 20px 10px;
+    padding: 5px 100px 20px 100px;
+}
+
+.Nosotros1 {
+    text-align: center;
+    margin: 30px 300px 52px 0px;
+    padding: 10px 250px 10px 30px;
+}
+
+.Nosotros2 {
+    display: grid;
+    grid-template-rows: 20% 15% 32.5% 32.5%;
+    grid-template-columns: 20% 20% 30% 30%;
+    grid-template-areas:
+        "NosimgA NosimgA NosimgB NosimgB"
+        "Til2A Til2A Til2B Til2B"
+        "Tex2A Tex2A Tex2B Tex2B"
+        "Tex2A Tex2A Tex2B Tex2B";
+    margin: 10px 300px 10px 10px;
+}
+
+.NosotrosimagenesA {
+    grid-area: NosimgA;
+    width: 5rem;
+    margin: 15px 10px 10px 220px;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.NosotrosimagenesB {
+    grid-area: NosimgB;
+    width: 5.7rem;
+    margin: 15px 10px 10px 220px;
+    padding: 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.titulonosotros-nivel-2-A {
+    grid-area: Til2A;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 0px 0px 10px 40px;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+    align-self: center;
+}
+
+.titulonosotros-nivel-2-B {
+    grid-area: Til2B;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 0px 140px 10px 0px;
+    padding: 20px 50px 10px 25px;
+    text-align: center;
+    align-self: center;
+}
+
+.textonosotros-nivel-2-A {
+    grid-area: Tex2A;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 0px 0px 10px 40px;
+    padding: 20px 20px 10px 10px;
+    text-align: justify;
+}
+
+.textonosotros-nivel-2-B {
+    grid-area: Tex2B;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 15px 120px 10px 20px;
+    padding: 4px 100px 10px 10px;
+    text-align: justify;
+}
+
+
+/* --------------Estilo del cuerpo de la página Productos-------------- */
+
+.contenedor-productos {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Productos"
+        "Footer";
+    grid-template-rows: 8rem 62rem 8rem;
+}
+
+.Productos {
+    grid-area: Productos;
+    background-color: white;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 10px 0px 10px;
+    background-size: cover;
+}
+
+.Productostexto-1 {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.Titulo2-productos {
+    margin: 15px;
+    font-size: 40px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+    text-align: center;
+}
+
+.parrafo-nivel-1-productos {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 10px 40px 10px;
+    font-weight: bold;
+    block-size: 0px;
+}
+
+.productos-separación {
+    width: 21%;
+    text-align: center;
+    margin: 10px 10px 15px 10px;
+    padding: 10px 10px 15px 10px;
+}
+
+.Productostexto-2 {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    justify-content: space-between;
+    align-content: normal;
+}
+
+.Productostexto-2A {
+    text-align: center;
+    margin: 10px 10px 10px 60px;
+    padding: 10px 50px 10px 20px;
+}
+
+.Productostexto-2B {
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.tituloproductos-nivel-2-A {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 10px 20px 10px 20px;
+    padding: 20px 20px 10px 10px;
+    text-align: center;
+}
+
+.tituloproductos-nivel-2-B {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 10px 20px 10px 20px;
+    padding: 20px 20px 10px 10px;
+    text-align: center;
+}
+
+.ProductosimagenesA {
+    width: 30rem;
+    border-radius: 1rem;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    /*  transition: all 2s; */
+}
+
+/* .ProductosimagenesA:hover {
+    transform: scale(1.2) translateY(8px);
+} */
+
+.ProductosimagenesB {
+    width: 37rem;
+    border-radius: 1rem;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    /*     transition: all 2s; */
+}
+
+/* .ProductosimagenesB:hover {
+    transform: scale(1.2) translateY(8px);
+} */
+
+.textoproductos-nivel-2-A {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+.textoproductos-nivel-2-B {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 21px;
+    line-height: 35px;
+    margin: 15px 30px 10px 50px;
+    padding: 15px 20px 10px 20px;
+    text-align: center;
+}
+
+.menuproductos-nivel-2-A {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+}
+
+.menuproductos-nivel-2-B {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+}
+
+/* --------------Estilo del cuerpo de las subpáginas Productos (cafetería y DulceySalado)-------------- */
+
+
+.cafetería-contenedor-cafe {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Cafeteria"
+        "Footer";
+    grid-template-rows: 8rem 84rem 8rem;
+}
+
+.cafetería-contenedor-dulce {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Cafeteria"
+        "Footer";
+    grid-template-rows: 8rem 100rem 8rem;
+}
+
+.cafetería-contenedor {
+    grid-area: Cafeteria;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 10px 10px 10px;
+}
+
+.cafetería {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px 20px 10px;
+}
+
+.Titulo2-cafetería {
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+    text-align: left;
+
+}
+
+.parrafo-nivel-1-cafetería-i {
+    align-self: flex-start;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 15px 60px 10px;
+    block-size: 0px;
+}
+
+
+
+.parrafo-nivel-1-cafetería {
+    align-self: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 15px 60px 10px;
+    block-size: 0px;
+}
+
+.cafetería-imagen {
+    position: revert;
+    border: #caa374 solid;
+    border-radius: 10px;
+}
+
+
+.cafetería-menu {
+    display: flex;
+    align-self: center;
+    padding: 20px 10px 20px 10px;
+}
+
+.cafetería-menu-a p {
+    margin: 10px;
+    padding: 20px 10px 20px 10px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: rgb(128, 52, 52);
+}
+
+.cafetería-menu-b p {
+    margin: 10px;
+    padding: 20px 500px 20px 10px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: rgb(128, 52, 52);
+}
+
+.cafetería-nav a {
+    text-decoration: none;
+    margin: 20px 0px 10px 685px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+}
+
+/* --------------Estilo del cuerpo de la página Contactos-------------- */
+
+.contenedor-contacto {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Contactos-seccion-1"
+        "Contactos-seccion-2"
+        "Contactos-seccion-3"
+        "Footer";
+    grid-template-rows: 8rem 63rem 60rem 70rem 8rem;
+}
+
+.Contactos-seccion-1 {
+    grid-area: Contactos-seccion-1;
+    text-align: right;
+    background-image: url(/Imagenes/Granoscafe-contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 80px 0px 500px 200px;
+    margin: 0px 0px 0px 0px;
+}
+
+.Contactos-seccion-1-A {
+    text-align: center;
+    padding: 1px 10px 30px 10px;
+    margin: 1px 10px 10px 10px;
+}
+
+.Contactotitulo-1 {
+    font-size: 65px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #1f110a;
+    text-align: center;
+    margin: 1px 30px 10px 100px;
+    padding: 1px 20px 10px 20px;
+}
+
+.Contactos-seccion-2 {
+    grid-area: Contactos-seccion-2;
+    text-align: right;
+    background-image: url(/Imagenes/Granoscafe-contacto-B.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px 10px 220px 10px;
+    margin: 0px 0px 0px 0px;
+}
+
+.Contactos-seccion-2-A {
+    text-align: center;
+    padding: 100px 10px 10px 100px;
+    margin: 10px 10px 10px 10px;
+}
+
+.Contactos-seccion-2-B {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 70px;
+}
+
+.Contactos-dirección {
+    display: flex;
+    align-items: center;
+    padding: 0px 800px 0px 0px;
+}
+
+.Contactos-ayuda {
+    display: flex;
+    align-items: center;
+}
+
+.Contactos-socialmedia {
+    display: flex;
+    align-items: center;
+}
+
+.Contactotitulo-2 {
+    font-size: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #7a5e3c;
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 20px;
+}
+
+.contactos-separación-B {
+    width: 21%;
+    margin: 10px 1000px 0px 100px;
+    padding: 10px 10px 10px 10px;
+}
+
+.textocontactos-nivel-1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 35px;
+    line-height: 35px;
+    margin: 15px 30px 10px 100px;
+    padding: 15px 20px 10px 70px;
+    text-align: left;
+}
+
+.textocontactos-nivel-2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.textocontactos-nivel-3 {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 17px;
+    line-height: 35px;
+}
+
+.Contactos-dirección-imagen {
+    width: auto;
+    text-align: right;
+}
+
+.Contactos-ayuda-imagen {
+    width: auto;
+    text-align: right;
+}
+
+.Contactos-socialmedia-imagen {
+    width: auto;
+    text-align: right;
+}
+
+.Contactos-dirección-texto {
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.Contactos-ayuda-texto {
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.Contactos-socialmedia-texto {
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.iconosredes a {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+}
+
+.Contactos-seccion-3 {
+    grid-area: Contactos-seccion-3;
+    text-align: right;
+    background-image: url(/Imagenes/Granoscafe-contacto-A.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 100px 0px 500px 10px;
+    margin: 2px 0px 0px 0px;
+}
+
+.Contactotitulo-3 {
+    font-size: 55px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #664734;
+    text-align: center;
+    margin: 50px 730px 10px 10px;
+    padding: 65px 20px 10px 20px;
+}
+
+.contactos-separación-C {
+    width: 19%;
+    text-align: center;
+    margin: 5px 970px 10px 50px;
+    padding: 5px 100px 10px 100px;
+
+}
+
+.Formulario {
+    background-color: #fbeee0;
+    margin: 5px 0px 10px 140px;
+    padding: 20px 20px 0px 20px;
+    border: 1px solid #fdddbb;
+    width: 35%;
+    border-radius: 10px;
+}
+
+.Formulario-row {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.Formulario-row input[type="text"],
+.Formulario-row input[type="email"] {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #fdddbb;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.Formulario-row label {
+    margin-bottom: 15px;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 17px;
+}
+
+.Formulario-row textarea {
+    background-color: #f9f9f9;
+    border: 1px solid #fdddbb;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 100%;
+    min-height: 100px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.Formulario-row p {
+    margin-bottom: 15px;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000000;
+    font-size: 10px;
+}
+
+.Formulario-row button {
+    align-self: center;
+    background-color: #c7b59b;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #573929;
+    cursor: pointer;
+}
+
+.Formulario-row button:hover {
+    background-color: #aa9d8c;
+}
+
+.Formulario-row button:active {
+    background-color: #543833;
+    color: #eceeef;
+}
+
+
+
+
+/* --------------Estilo del Footer de las páginas del proyectos-------------- */
+
+.Footer {
+    grid-area: Footer;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.57);
+    width: 100%;
+}
+
+.Footernav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and  (max-width: 1330px) {
+   
+    .Footernav {
+        flex-direction: column;
+    }
+
+}
+
+.Footerlogo a img {
+    margin: 0px 0px 10px 700px;
+    padding: 0px 0px;
+    width: 11%;
+    height: 11%;
+}
+
+@media screen and  (max-width: 1330px) {
+   
+    .Footerlogo a img {
+        margin: 0px 0px 0px 100px;
+        padding: 0px 0px;
+        width: 32%;
+        height: 32%;}
+
+}
+
+.footercontacto a {
+    text-decoration: none;
+    margin: 20px;
+    font-size: 1.25rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: #aa9d8c;
+    margin: 10px 0px 10px 15px;
+    padding: 10px 10px 7px 150px;
+}
+
+@media screen and  (max-width: 1330px) {
+   
+    .footercontacto a {
+        margin: 0px 10px 0px 10px;
+        padding: 0px 10px 0px 10px;
+    }
+
+}
+
+
+.footerredessociales {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerredessociales a {
+    margin: 0px 0px 10px 0px;
+    padding: 25px 15px 10px 10px;
+}
+
+/* --------------Estilo responisve del cuerpo de la página Inicio-------------- */

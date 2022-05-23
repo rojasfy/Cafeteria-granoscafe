@@ -1,0 +1,118 @@
+/* --------------Estilo del cuerpo de las subpáginas Productos (cafetería y dulceysalado)-------------- */
+
+@import "../base/mixins";
+
+.cafetería-contenedor-cafe {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Cafeteria"
+        "Footer";
+    grid-template-rows: 8rem 90rem 7.5rem;
+}
+
+.cafetería-contenedor-dulce {
+    display: grid;
+    grid-template-areas:
+        "head"
+        "Cafeteria"
+        "Footer";
+    grid-template-rows: 8rem 90rem 7.5rem;
+}
+
+.cafetería-contenedor {
+    grid-area: Cafeteria;
+    background-image: linear-gradient(rgba(235, 235, 236, 0.95), rgba(235, 235, 236, 0.95)), url(/Imagenes/Granoscafe-productos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    padding-top: 2%;
+    margin: 1px;
+}
+
+.cafetería {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px 20px 10px;
+}
+
+.Titulo2-cafetería {
+    margin: 0px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: $color-principal-titulo;
+    text-align: left;
+
+}
+
+.parrafo-nivel-1-cafetería-i {
+    align-self: flex-start;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 15px 60px 10px;
+    block-size: 0px;
+}
+
+
+
+.parrafo-nivel-1-cafetería {
+    align-self: center;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #363636;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 15px 60px 10px;
+    block-size: 0px;
+}
+
+.cafetería-imagen {
+    position: revert;
+    @include box-varios(solid 2px #704b3b, 10px, 5px, 5px);
+    background-color:whitesmoke;
+}
+
+
+
+.cafetería-imagen-h {
+    height: 390px;
+    }
+
+.cafetería-menu {
+    display: flex;
+    align-self: center;
+    padding: 10px 10px 40px 10px;
+}
+
+.cafetería-menu-a p {
+    margin: 10px;
+    padding: 20px 10px 20px 10px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: rgb(128, 52, 52);
+}
+
+.cafetería-menu-b p {
+    margin: 10px;
+    padding: 20px 500px 20px 10px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: rgb(128, 52, 52);
+}
+
+.cafetería-nav a {
+    text-decoration: none;
+    margin: 20px 0px 10px 685px;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: $color-principal-titulo;
+}

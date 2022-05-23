@@ -1,0 +1,220 @@
+/* --------------Estilo del Header de las páginas del proyectos-------------- */
+
+@import "../base/variables";
+
+.topheader {
+  box-shadow: 0 4px 5px $navbar-shallow-color;
+  position: fixed;
+  background-color: $theme-color;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+
+.logo img {
+  border-radius: 50%;
+  border: solid 2px $color-menu;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 0 20px;
+
+    a {
+      color: $text-color-inverse;
+      font-size: 18px;
+      font-weight: 501;
+      text-transform: uppercase;
+      position: relative;
+
+    }
+  }
+}
+
+
+
+.menu a::before {
+  content: "";
+  background-color: $secundary-color;
+  position: absolute;
+  left: -42px;
+  top: calc(100% + -26px);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: url(/Imagenes/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+.menu a.selected-1::before {
+  left: -60px;
+}
+
+.menu a.selected-2::before {
+  left: -66px;
+}
+
+.menu a.selected-3::before {
+  left: -60px;
+}
+
+.menu a.selected-4::before {
+  left: -56px;
+}
+
+.menu a.selected::before,
+.menu a:hover::before {
+  opacity: 1;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  height: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background: url(/Imagenes/nav-underline.png);
+  background-repeat: no-repeat;
+  background-size: 74px 10px;
+  background-position: 0% 30%, center bottom;
+
+}
+
+.menu a.selected::after {
+  background-size: 54px 10px;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+  opacity: 1;
+}
+
+.menu a:hover {
+  color: $primary-color;
+  font-weight: bold;
+
+}
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+.logotype {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: $menu-mobile-background-color;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .logo img {
+    width: auto;
+    height: 70px;
+  }
+
+  .menu li {
+    padding: 0;
+
+    a {
+      color: $text-color-inverse;
+      line-height: 50px;
+      font-size: 25px;
+    }
+  }
+
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 20px 40px;
+
+    img {
+      width: 22px;
+    }
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .menu a::before {
+    content: none;
+  }
+
+  .menu a::after {
+    content: none;
+  }
+
+  .menu a.selected {
+    color: $navbar-color-inicio;
+    font-weight: bold;
+  }
+
+  .menu a:hover {
+    color: $primary-color;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Menu */
+
+
+  .topnav {
+    max-width: 650px;
+  }
+}

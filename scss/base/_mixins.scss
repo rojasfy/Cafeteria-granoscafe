@@ -1,0 +1,7 @@
+@mixin box-varios($borde, $radio, $margen, $relleno) {
+border: $borde;
+border-radius: $radio;
+margin: $margen;
+padding: $relleno;
+
+}

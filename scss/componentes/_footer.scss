@@ -1,0 +1,78 @@
+/* --------------Estilo del Footer de las páginas del proyectos-------------- */
+@import "../base/extends";
+@import "../base/variables";
+
+
+
+
+
+.footer {
+    background: $theme-color;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    box-shadow: 0px 5px 40px #e5e5e5;
+}
+
+
+.footer .share {
+    padding: 0.9rem 0;
+}
+
+.footer .share a {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: $text-color-inverse;
+    border: .1rem solid rgba(255, 255, 255, .3);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: $primary-color;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 0.8rem;
+}
+
+.footer .links a {
+    padding: 0.5rem 1rem;
+    color: $text-color-inverse;
+    border: .1rem solid rgba(255, 255, 255, .3);
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.footer .links a:hover {
+    background-color: $primary-color;
+}
+
+.footer .credit {
+    font-size: 1.0rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.2rem;
+    font-family: sans-serif;
+}
+
+.footer .credit span {
+    color: $primary-color;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .footer {
+        top: 0px;
+    }
+}
