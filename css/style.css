@@ -1773,6 +1773,7 @@ hr:not([size]) {
   transition: all 0.3s ease;
   z-index: 1;
   margin-left: 125px;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 950px) {
