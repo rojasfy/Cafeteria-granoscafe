@@ -6,7 +6,7 @@
 }
 
 .padre-inicio {
-  color: #363636;
+  color: rgb(54, 54, 54);
   display: flex;
   flex-flow: column nowrap;
   background-color: #e4e4e4;
@@ -14,12 +14,12 @@
 
 a {
   text-decoration: none;
-  color: #363636;
+  color: rgb(54, 54, 54);
 }
 
 /* --------------Estilo del Header de las páginas del proyectos-------------- */
 .topheader {
-  box-shadow: 0 4px 5px #e5e5e5;
+  box-shadow: 0 4px 5px rgb(229, 229, 229);
   position: fixed;
   background-color: #302f2f;
   left: 0;
@@ -144,7 +144,7 @@ a {
     top: 0;
     width: 100%;
     align-items: center;
-    background-color: #363636;
+    background-color: rgb(54, 54, 54);
     height: 100%;
     overflow-y: auto;
     opacity: 0;
@@ -201,7 +201,7 @@ a {
   }
 
   .menu a.selected {
-    color: #c79c60;
+    color: rgb(199, 156, 96);
     font-weight: bold;
   }
 
@@ -384,7 +384,7 @@ a {
 }
 .Bienvenido-texto .parrafo-nivel-2 {
   font-size: 20px;
-  color: #363636;
+  color: rgb(54, 54, 54);
   font-weight: 500;
   text-align: justify;
   line-height: 1.7;
@@ -392,7 +392,7 @@ a {
 }
 .Bienvenido-texto .parrafo-nivel-1 {
   font-size: 22px;
-  color: #363636;
+  color: rgb(54, 54, 54);
   font-weight: bold;
   text-align: center;
   line-height: 1.7;
@@ -488,7 +488,7 @@ a {
   width: 100%;
   height: 45px;
   line-height: 45px;
-  color: #363636;
+  color: rgb(54, 54, 54);
   background: rgba(255, 255, 255, 0.4);
   text-align: center;
   font-weight: 501;
@@ -496,7 +496,7 @@ a {
 
 .card .back {
   transform: perspective(600px) rotateY(180deg);
-  background: #363636;
+  background: rgb(54, 54, 54);
   padding: 15px;
   color: rgb(255, 255, 255);
   display: flex;
@@ -579,7 +579,7 @@ a {
   }
   .Bienvenido-texto .parrafo-nivel-1 {
     font-size: 20px;
-    color: #363636;
+    color: rgb(54, 54, 54);
     font-weight: bold;
     text-align: center;
     line-height: 1.6;
@@ -1200,500 +1200,208 @@ hr:not([size]) {
     max-width: 300px;
   }
 }
-/* .Nosotros {
-    grid-area: Nosotros;
-    background-image: url(/Imagenes/Granoscafe-nosotrossomoscafe.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
-    text-align: center;
-    padding-top: 1%;
-}
-
-.Titulo2-nosotros {
-    margin: 20px;
-    font-size: 40px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: $color-principal-titulo;
-    text-align: center;
-}
-
-.parrafo-nivel-2-nosotros {
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #f5f5f5;
-    font-size: 19px;
-    line-height: 35px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.parrafo-nivel-1-nosotros {
-    font-family: 'Poppins', Arial, sans-serif;
-    color:white;
-    font-size: 20px;
-    line-height: 35px;
-    margin: 5px;
-    padding: 10px;
-    font-weight: bold;
-    block-size: 0px;
-}
-
-.nosotros-separación {
-    width: 30%;
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    padding: 10px;
-
-}
-
-.Nosotros1 {
-    text-align: center;
-    margin: 10px 700px 10px 10px;
-    padding: 10px;
-}
-
-.Nosotros2 {
-    display: grid;
-    grid-template-rows: 20% 15% 32.5% 32.5%;
-    grid-template-columns: 20% 20% 30% 30%;
-    grid-template-areas:
-        "NosimgA NosimgA NosimgB NosimgB"
-        "Til2A Til2A Til2B Til2B"
-        "Tex2A Tex2A Tex2B Tex2B"
-        "Tex2A Tex2A Tex2B Tex2B";
-        width: 900px;
-        padding-top: 6%;}
-
-.NosotrosimagenesA {
-    grid-area: NosimgA;
-    width: 5rem;
-    margin: 0% auto;
-    padding: 10px;
-    text-align: center;
-    align-self: center;
-}
-
-.NosotrosimagenesB {
-    grid-area: NosimgB;
-    width: 5.5rem;
-    margin: 0% auto;
-    padding: 10px;
-    text-align: center;
-    align-self: center;
-}
-
-.titulonosotros-nivel-2-A {
-    grid-area: Til2A;
-    font-family: 'Poppins', Arial, sans-serif;
-    color:$color-principal-titulo;
-    font-size: 21px;
-    line-height: 35px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    align-self: center;
-}
-
-.titulonosotros-nivel-2-B {
-    grid-area: Til2B;
-    font-family: 'Poppins', Arial, sans-serif;
-    color: $color-principal-titulo;
-    font-size: 21px;
-    line-height: 35px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    align-self: center;
-}
-
-.textonosotros-nivel-2-A {
-    grid-area: Tex2A;
-    font-family: 'Poppins', Arial, sans-serif;
-    color:whitesmoke;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0% auto;
-    padding: 10px;
-}
-
-.textonosotros-nivel-2-B {
-    grid-area: Tex2B;
-    font-family: 'Poppins', Arial, sans-serif;
-    color:whitesmoke;
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0% auto;
-    padding: 10px 50px;
-}
- */
 /* --------------Estilo del cuerpo de la página Productos-------------- */
 /* --------------Estilo del cuerpo de las subpáginas Productos (cafetería y dulceysalado)-------------- */
-.cafetería-contenedor-cafe {
-  display: grid;
-  grid-template-areas: "head" "Cafeteria" "Footer";
-  grid-template-rows: 8rem 90rem 7.5rem;
+.container-menu-pro {
+  max-width: 1125px;
+  margin: 0 auto;
 }
 
-.cafetería-contenedor-dulce {
-  display: grid;
-  grid-template-areas: "head" "Cafeteria" "Footer";
-  grid-template-rows: 8rem 90rem 7.5rem;
-}
-
-.cafetería-contenedor {
-  grid-area: Cafeteria;
-  background-image: linear-gradient(rgba(235, 235, 236, 0.95), rgba(235, 235, 236, 0.95)), url(/Imagenes/Granoscafe-productos.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 50% 50%;
-  padding-top: 2%;
-  margin: 1px;
-}
-
-.cafetería {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px 10px 20px 10px;
-}
-
-.Titulo2-cafetería {
-  margin: 0px;
-  padding: 10px;
+.tm-contac-item-title-pro {
   font-size: 25px;
-  font-family: "Kanit", sans-serif;
-  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: rgb(54, 54, 54);
+  padding: 0 20px;
+}
+
+.tm-popular-items-container-pro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.tm-popular-item-pro {
+  background-color: rgb(255, 255, 255);
+  background-size: 100% 100%;
+  max-width: 270px;
+  max-height: 455px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.tm-popular-item-img-prod {
+  margin: 15px;
+  width: 244px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px 10px;
+}
+
+.fa-heart {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 35px;
+  width: 35px;
+  line-height: 37px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 50%;
+  color: rgb(174, 174, 174);
+}
+
+.fa-heart:hover {
+  background-color: rgb(54, 54, 54);
   color: #c79c60;
-  text-align: left;
 }
 
-.parrafo-nivel-1-cafetería-i {
-  align-self: flex-start;
-  font-family: "Poppins", Arial, sans-serif;
-  color: #363636;
-  font-size: 20px;
-  line-height: 35px;
-  margin: 10px 0px 10px 0px;
-  padding: 10px 15px 60px 10px;
-  block-size: 0px;
+.tm-popular-item-description-prod {
+  padding: 0 30px 60px;
+  position: relative;
+  text-align: justify;
 }
 
-.parrafo-nivel-1-cafetería {
-  align-self: center;
-  font-family: "Poppins", Arial, sans-serif;
-  color: #363636;
-  font-size: 20px;
-  line-height: 35px;
-  margin: 10px 0px 10px 0px;
-  padding: 10px 15px 60px 10px;
-  block-size: 0px;
+.stars {
+  padding-bottom: 0px;
+}
+.stars i {
+  font-size: 15px;
+  color: rgb(174, 174, 174);
 }
 
-.cafetería-imagen {
-  position: revert;
-  border: solid 2px #704b3b;
+.btn-price {
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.btn-menu-prod {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5 1 auto;
+  background-image: url(/Imagenes/tm-brown-button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 8px;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #c79c60;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  flex: 0.5 1 auto;
+}
+
+.btn-menu-prod:hover,
+.btn-menu-prod:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.price {
+  color: rgb(174, 174, 174);
+  font-size: 23px;
+  flex: 1 1 auto;
+  font-weight: 501;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-now-container-pro {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(82, 76, 76);
   border-radius: 10px;
-  margin: 5px;
-  padding: 5px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: -50px;
+  justify-content: center;
+}
+
+.order-now-link-pro {
+  font-size: 18px;
+  color: rgb(174, 174, 174);
+  border: 2px solid rgb(174, 174, 174);
+  border-radius: 10px;
+  width: 162px;
+  height: 30px;
+  padding: 0 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tm-popular-item-pro:hover {
   background-color: whitesmoke;
 }
 
-.cafetería-imagen-h {
-  height: 390px;
-}
-
-.cafetería-menu {
-  display: flex;
-  align-self: center;
-  padding: 10px 10px 40px 10px;
-}
-
-.cafetería-menu-a p {
-  margin: 10px;
-  padding: 20px 10px 20px 10px;
-  font-size: 20px;
-  font-family: "Kanit", sans-serif;
-  font-weight: bold;
-  color: rgb(128, 52, 52);
-}
-
-.cafetería-menu-b p {
-  margin: 10px;
-  padding: 20px 500px 20px 10px;
-  font-size: 20px;
-  font-family: "Kanit", sans-serif;
-  font-weight: bold;
-  color: rgb(128, 52, 52);
-}
-
-.cafetería-nav a {
-  text-decoration: none;
-  margin: 20px 0px 10px 685px;
-  font-size: 18px;
-  font-family: "Kanit", sans-serif;
-  font-weight: bold;
+.tm-popular-item-pro:hover .stars i {
   color: #c79c60;
 }
 
+.tm-popular-item-pro:hover .tm-popular-item-title {
+  color: #c79c60;
+}
+
+.tm-popular-item-pro:hover .price {
+  color: #c79c60;
+}
+
+.tm-popular-item-pro:hover hr {
+  border: solid 1.5px #c79c60;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tm-popular-items-container-pro:hover .order-now-link-pro {
+  border-color: #c79c60;
+  color: #c79c60;
+  text-decoration: none;
+}
+
+.tm-main-section-pro {
+  padding-top: 80px;
+}
+
 /* --------------Estilo del cuerpo de la página Contactos-------------- */
-/* 
-.contenedor-contacto {
-    display: grid;
-    grid-template-areas:
-        "head"
-        "Contactos-seccion-1"
-        "Contactos-seccion-2"
-        "Contactos-seccion-3"
-        "Footer";
-    grid-template-rows: 8rem 45rem 60rem 70rem 7.5rem;
-}
-
-.Contactos-seccion-1 {
-    grid-area: Contactos-seccion-1;
-    text-align: right;
-    background-image: url(/Imagenes/Granoscafe-contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
-    text-align: center;
-    padding-top: 5%;
-}
-
-.Contactos-seccion-1-A {
-    text-align: center;
-    padding: 1px 10px 30px 10px;
-    margin: 1px 10px 10px 10px;
-}
-
-.Contactotitulo-1 {
-    font-size: 60px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    text-align: center;
-    margin: 0% auto;
-    padding: 10px;
-}
-
-.Contactos-seccion-2 {
-    grid-area: Contactos-seccion-2;
-    text-align: right;
-    background-image: url(/Imagenes/Granoscafe-contacto-B.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 10px 10px 220px 10px;
-    margin: 0px 0px 0px 0px;
-}
-
-.Contactos-seccion-2-A {
-    text-align: center;
-    padding: 50px 10px 10px 100px;
-    margin: 10px 10px 10px 10px;
-}
-
-.Contactos-seccion-2-B {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0px 0px 70px;
-}
-
-.Contactos-dirección {
-    @extend %flexbox;
-    padding: 0px 800px 0px 0px;
-}
-
-.Contactos-ayuda {
-    @extend %flexbox;
-    padding: 0px 800px 0px 0px;
-}
-
-.Contactos-socialmedia {
-    @extend %flexbox;
-    padding: 0px 800px 0px 0px;
-}
-
-.Contactotitulo-2 {
-    font-size: 50px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: $color-principal-titulo;
-    text-align: left;
-    margin: 10px 10px 10px 10px;
-    padding: 10px 10px 10px 20px;
-}
-
-.contactos-separación-B {
-    width: 21%;
-    margin: 10px 1000px 0px 100px;
-    padding: 10px 10px 10px 10px;
-}
-
-.textocontactos-nivel-1 {
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #000000;
-    font-size: 35px;
-    line-height: 35px;
-    margin: 15px 30px 10px 100px;
-    padding: 15px 20px 10px 70px;
-    text-align: left;
-}
-
-.textocontactos-nivel-2 {
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #000000;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-.textocontactos-nivel-3 {
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #000000;
-    font-size: 17px;
-    line-height: 35px;
-}
-
-.Contactos-dirección-imagen {
-    width: auto;
-    text-align: right;
-}
-
-.Contactos-ayuda-imagen {
-    width: auto;
-    text-align: right;
-}
-
-.Contactos-socialmedia-imagen {
-    width: auto;
-    text-align: right;
-}
-
-.Contactos-dirección-texto {
-    text-align: left;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-}
-
-.Contactos-ayuda-texto {
-    text-align: left;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-}
-
-.Contactos-socialmedia-texto {
-    text-align: left;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 10px 10px;
-}
-
-.iconosredes a {
-    text-align: center;
-    padding: 5px 5px 5px 5px;
-    margin: 5px 5px 5px 5px;
-}
-
-.Contactos-seccion-3 {
-    grid-area: Contactos-seccion-3;
-    text-align: right;
-    background-image: url(/Imagenes/Granoscafe-contacto-A.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 100px 0px 500px 10px;
-    margin: 2px 0px 0px 0px;
-}
-
-.Contactotitulo-3 {
-    font-size: 55px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: $color-principal-titulo;
-    text-align: center;
-    margin: 50px 730px 10px 10px;
-    padding: 65px 20px 10px 20px;
-}
-
-.contactos-separación-C {
-    width: 26%;
-    text-align: center;
-    margin: 1px 940px 10px 50px;
-    padding: 1px 100px 10px 100px;
-
-}
-
-.Formulario {
-    background-color: #fbeee0;
-    margin: 5px 0px 10px 140px;
-    padding: 20px 20px 0px 20px;
-    border: 1px solid #fdddbb;
-    width: 35%;
-    border-radius: 10px;
-}
-
-.Formulario-row {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-
-}
-
-.Formulario-row input[type="text"],
-.Formulario-row input[type="email"] {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #fdddbb;
-    width: 100%;
-    border-radius: 10px;
-    font-size: 14px;
-}
-
-.Formulario-row label {
-    margin-bottom: 15px;
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #000000;
-    font-size: 17px;
-}
-
-.Formulario-row textarea {
-    background-color: #f9f9f9;
-    border: 1px solid #fdddbb;
-    border-radius: 10px;
-    padding: 10px;
-    min-width: 100%;
-    min-height: 100px;
-    font-size: 14px;
-    margin-bottom: 10px;
-    resize: none;
-}
-
-.Formulario-row p {
-    margin-bottom: 15px;
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #000000;
-    font-size: 10px;
-}
-
-.Formulario-row button {
-    @include box-varios(none, 10px, 2px, 10px 40px);
-    align-self: center;
-    background-color: #c7b59b;
-    font-size: 16px;
-    font-weight: bold;
-    color: #573929;
-    cursor: pointer;
-}
-
-.Formulario-row button:hover {
-    background-color: #aa9d8c;
-}
-
-.Formulario-row button:active {
-    background-color: #543833;
-    color: #eceeef;
-}
-
- */
 .tm-contact-form {
   margin-top: 60px;
 }
@@ -1717,7 +1425,7 @@ hr:not([size]) {
   font-size: 25px;
   margin-top: 0;
   margin-bottom: 0;
-  color: #363636;
+  color: rgb(54, 54, 54);
 }
 
 .form-control {

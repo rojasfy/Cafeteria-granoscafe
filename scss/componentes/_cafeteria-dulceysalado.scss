@@ -1,118 +1,205 @@
 /* --------------Estilo del cuerpo de las subpáginas Productos (cafetería y dulceysalado)-------------- */
 
 @import "../base/mixins";
+@import "../base/variables";
 
-.cafetería-contenedor-cafe {
-    display: grid;
-    grid-template-areas:
-        "head"
-        "Cafeteria"
-        "Footer";
-    grid-template-rows: 8rem 90rem 7.5rem;
+
+.container-menu-pro {
+  max-width: 1125px;
+  margin: 0 auto;
 }
 
-.cafetería-contenedor-dulce {
-    display: grid;
-    grid-template-areas:
-        "head"
-        "Cafeteria"
-        "Footer";
-    grid-template-rows: 8rem 90rem 7.5rem;
+.tm-contac-item-title-pro {
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: rgb(54, 54, 54);
+  padding: 0 20px;
 }
 
-.cafetería-contenedor {
-    grid-area: Cafeteria;
-    background-image: linear-gradient(rgba(235, 235, 236, 0.95), rgba(235, 235, 236, 0.95)), url(/Imagenes/Granoscafe-productos.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 50% 50%;
-    padding-top: 2%;
-    margin: 1px;
-}
+.tm-popular-items-container-pro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;}
 
-.cafetería {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 10px 20px 10px;
-}
-
-.Titulo2-cafetería {
-    margin: 0px;
-    padding: 10px;
-    font-size: 25px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: $color-principal-titulo;
-    text-align: left;
-
-}
-
-.parrafo-nivel-1-cafetería-i {
-    align-self: flex-start;
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #363636;
-    font-size: 20px;
-    line-height: 35px;
-    margin: 10px 0px 10px 0px;
-    padding: 10px 15px 60px 10px;
-    block-size: 0px;
+.tm-popular-item-pro {
+  background-color: $text-color-inverse;
+  background-size: 100% 100%;
+  max-width: 270px;
+  max-height: 455px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  border-radius: 15px;
+  position: relative;
 }
 
 
+.tm-popular-item-img-prod {
+  margin: 15px;
+  width: 244px;
+  height: 150px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px 10px;}
 
-.parrafo-nivel-1-cafetería {
-    align-self: center;
-    font-family: 'Poppins', Arial, sans-serif;
-    color: #363636;
-    font-size: 20px;
-    line-height: 35px;
-    margin: 10px 0px 10px 0px;
-    padding: 10px 15px 60px 10px;
-    block-size: 0px;
+.fa-heart {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 35px;
+  width: 35px;
+  line-height: 37px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 50%;
+  color: rgb(174, 174, 174);
 }
 
-.cafetería-imagen {
-    position: revert;
-    @include box-varios(solid 2px #704b3b, 10px, 5px, 5px);
-    background-color:whitesmoke;
+.fa-heart:hover {
+  background-color: $text-color;
+  color: $primary-color;
+}
+
+.tm-popular-item-description-prod {
+  padding: 0 30px 60px;
+  position: relative;
+  text-align: justify;
+}
+
+.stars {
+  padding-bottom: 0px;
+
+  i {
+    font-size: 15px;
+    color: rgb(174, 174, 174)
+  }
+}
+
+.btn-price {
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 
-
-.cafetería-imagen-h {
-    height: 390px;
-    }
-
-.cafetería-menu {
-    display: flex;
-    align-self: center;
-    padding: 10px 10px 40px 10px;
+.btn-menu-prod {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5 1 auto;
+  background-image: url(/Imagenes/tm-brown-button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0px 8px;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #c79c60;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
+  flex: 0.5 1 auto;
 }
 
-.cafetería-menu-a p {
-    margin: 10px;
-    padding: 20px 10px 20px 10px;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: rgb(128, 52, 52);
+.btn-menu-prod:hover,
+.btn-menu-prod:focus {
+  color: white;
+  text-decoration: none;
 }
 
-.cafetería-menu-b p {
-    margin: 10px;
-    padding: 20px 500px 20px 10px;
-    font-size: 20px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: rgb(128, 52, 52);
+
+.price {
+  color: rgb(174, 174, 174);
+  font-size: 23px;
+  flex: 1 1 auto;
+  font-weight: 501;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.cafetería-nav a {
-    text-decoration: none;
-    margin: 20px 0px 10px 685px;
+.order-now-container-pro {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(82, 76, 76);
+  border-radius: 10px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: -50px;
+  justify-content: center;}
+
+  .order-now-link-pro {
     font-size: 18px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    color: $color-principal-titulo;
+    color: rgb(174, 174, 174);
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 10px;
+    width: 162px;
+    height: 30px;
+    padding: 0 15px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-transform: uppercase;}
+
+
+
+.tm-popular-item-pro:hover {
+  background-color: whitesmoke
+}
+
+.tm-popular-item-pro:hover .stars i{
+  color: $color-principal-titulo;
+}
+.tm-popular-item-pro:hover .tm-popular-item-title {
+  color: $color-principal-titulo;
+}
+
+.tm-popular-item-pro:hover .price {
+  color: $color-principal-titulo;
+}
+
+.tm-popular-item-pro:hover hr {
+  border: solid 1.5px #c79c60;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.tm-popular-items-container-pro:hover .order-now-link-pro {
+  border-color: #c79c60;
+  color: #c79c60;
+  text-decoration: none;
+}
+
+.tm-main-section-pro {
+  padding-top: 80px;
 }
