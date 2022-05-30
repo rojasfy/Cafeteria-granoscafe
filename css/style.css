@@ -1241,7 +1241,7 @@ hr:not([size]) {
   max-width: 270px;
   max-height: 455px;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   margin-left: 15px;
   border-radius: 15px;
   position: relative;
@@ -1355,7 +1355,7 @@ hr:not([size]) {
   justify-content: center;
   color: white;
   position: absolute;
-  bottom: -50px;
+  bottom: -80px;
   justify-content: center;
 }
 
@@ -1401,10 +1401,19 @@ hr:not([size]) {
   text-decoration: none;
 }
 
-.tm-main-section-pro {
+.tm-main-section-pro-b {
   padding-top: 80px;
 }
 
+.tm-main-section-pro-c {
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .tm-main-section-pro-c {
+    margin-bottom: 50px;
+  }
+}
 /* --------------Estilo del cuerpo de la página Contactos-------------- */
 .tm-contact-form {
   margin-top: 60px;
