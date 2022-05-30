@@ -1202,6 +1202,10 @@ hr:not([size]) {
 }
 /* --------------Estilo del cuerpo de la página Productos-------------- */
 /* --------------Estilo del cuerpo de las subpáginas Productos (cafetería y dulceysalado)-------------- */
+.tm-main-section-pro-a {
+  padding-top: 170px;
+}
+
 .container-menu-pro {
   max-width: 1125px;
   margin: 0 auto;
@@ -1391,7 +1395,7 @@ hr:not([size]) {
   transition: all 0.3s ease;
 }
 
-.tm-popular-items-container-pro:hover .order-now-link-pro {
+.order-now-link-pro:hover {
   border-color: #c79c60;
   color: #c79c60;
   text-decoration: none;
