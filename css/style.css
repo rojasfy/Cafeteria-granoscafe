@@ -1417,7 +1417,7 @@ hr:not([size]) {
 }
 @media screen and (max-width: 500px) {
   .tm-main-section-pro-c {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 /* --------------Estilo del cuerpo de la página Contactos-------------- */
