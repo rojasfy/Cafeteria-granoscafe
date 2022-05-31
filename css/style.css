@@ -1416,6 +1416,10 @@ hr:not([size]) {
   }
 }
 @media screen and (max-width: 500px) {
+  .container {
+    padding-left: 0px;
+  }
+
   .tm-main-section-pro-c {
     margin-bottom: 70px;
   }
