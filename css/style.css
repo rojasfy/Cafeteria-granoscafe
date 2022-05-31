@@ -1336,8 +1336,8 @@ hr:not([size]) {
 }
 
 .order-now-container-pro {
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: 60px;
   background-color: rgb(82, 76, 76);
   border-radius: 10px;
   margin: 10px auto;
@@ -1364,9 +1364,9 @@ hr:not([size]) {
   color: rgb(174, 174, 174);
   border: 2px solid rgb(174, 174, 174);
   border-radius: 10px;
-  width: 162px;
-  height: 30px;
-  padding: 0 15px;
+  width: 220px;
+  height: 40px;
+  padding: 5px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-align: center;
