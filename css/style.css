@@ -1409,6 +1409,12 @@ hr:not([size]) {
   padding-top: 80px;
 }
 
+@media screen and (max-width: 550px) {
+  .tm-header-line {
+    display: block;
+    margin: 20px auto;
+  }
+}
 @media screen and (max-width: 500px) {
   .tm-main-section-pro-c {
     margin-bottom: 50px;
