@@ -1504,7 +1504,14 @@ hr:not([size]) {
   transition: all 0.3s ease;
   z-index: 1;
   margin-left: 125px;
+  margin-top: 30px;
   border-radius: 15px;
+}
+
+.tm-more-button-contac:hover,
+.tm-more-button-contac:focus {
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 950px) {
@@ -1526,6 +1533,8 @@ hr:not([size]) {
 
   .tm-more-button-contac {
     margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 500px) {
